@@ -228,7 +228,89 @@ int LS_full_pyramid()
 				cout<<endl;
 		   }
 	 }
-
+	 
+	 
+	 // number pattern 
+	  
+	  
+	  // pascale triangle 
+	  
+	  
+	  int pascaleTriangle()
+	  {
+	  	 int n;
+	  	 cin>>n;
+	  	 
+	  	 for(int i=1;i<=n;i++)
+	  	   { 
+	  	     int coef=1;
+	  	    
+	  	   	 for(int k=(n-i);k>0;k--)
+	  	   	  cout<<" ";
+	  	   	 for(int j=1;j<=i;j++)
+	  	   	  {
+	  	   	  	cout<<coef<<" ";
+	  	   	  	coef=coef*(i-j)/j;
+				   }
+				   cout<<endl;
+			 }
+	  }
+	  
+	  
+	  //floyed triangle 
+ int ud_full_pascale()
+	  {
+	  	 int n;
+	  	 cin>>n;
+	  	 
+	  	 for(int i=n;i>=1;i--)
+	  	   { 
+	  	     int coef=1;
+	  	    
+	  	   	 for(int k=(n-i);k>0;k--)
+	  	   	  cout<<" ";
+	  	   	 for(int j=1;j<=i;j++)
+	  	   	  {
+	  	   	  	cout<<coef<<" ";
+	  	   	  	coef=coef*(i-j)/j;
+	  	   	  	
+				   }
+				   cout<<endl;
+			 }
+	  }
+ 	 
+ //right side
+  int factorial(unsigned int x)
+  {
+  	 int m=1;
+  	  for(int i=1;i<=x;i++)
+  	   {
+  	   	  m=m*i;
+		 }
+	return m;
+  }
+  
+  int nCr(int n,int r)
+    {
+    	int k=factorial(n)/(factorial(r)*factorial(n-r));
+    	return k;
+	}
+   rs_full_pascale()
+    {
+    	int n;
+    	cin>>n;
+    	  for(int i=n;i>=0;i--)
+    	   {
+    	   	  for(int j=i;j>=0;j--)
+    	   	   {
+			
+				  cout<<nCr(i,j);
+    	     	}
+    	     	cout<<endl;
+    	   	   
+		   }
+		   
+	}
 int main()
 {   
     cout<<"Give your name"<<endl;
@@ -247,4 +329,9 @@ int main()
     parallelogram();
     circle();
     donut();
+    pascaleTriangle();
+     ud_full_pascale();
+    rs_full_pascale();
+    cout<< factorial(0); 
+	cout<<nCr(5,5); 
 }
