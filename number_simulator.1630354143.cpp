@@ -269,7 +269,7 @@ int prime_checker(int n)
  	  int number;
  	  cin>>number;
  	    
- 	   if(prime_checker(number)==-1)
+ 	 /*  if(prime_checker(number)==-1)
  	      cout<<"it is not  prime number";
  	    else
  	      cout<<"it is a prime number ";
@@ -288,7 +288,7 @@ int prime_checker(int n)
 	    factor(number);
 	    primeFactor(number);
 	    cout<<factorial(number);
-	    series_1(number);
+	    series_1(number);*/
 	    triangular (number); 
 	  //  cout<<series_0(number);
 	     
