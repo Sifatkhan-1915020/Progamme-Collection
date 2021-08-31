@@ -263,47 +263,13 @@ int prime_checker(int n)
          cout<<sum;
          
 	 }
-	 
-// armstrong number
-
-int armstrong_checker(int n)
- {
- 	int sum=0,reminder;
- 	int temp=n;
- 	while(n!=0)
- 	 {
- 	 	reminder=n%10;
- 	 	sum=sum+pow(reminder,3);
- 	 	n=n/10;
-	  }
-	  if(sum==temp)
-	   return 1;
-	  if (sum!=temp)
-	   return -1;	  
- }
- 
- 
- int armstrong_printer(int inp1,int inp2)
-  {
-  	int k=0;
-  	while(inp1<=inp2)
-  	 {
-  	  	if(armstrong_checker(inp1)==1)
-  	  	  {
-	 		  cout<<inp1<<" ";
-	 		  k++;
-  	  	    } 
-  	  	 inp1++;
-	   }
-	   cout<<"\n total armstrong number in this range :"<< k;
-  }
  int main(){
  	  
  	  cout<<"Give a number here";
  	  int number;
  	  cin>>number;
  	    
- 	  if(prime_checker(number)==-1)
+ 	   if(prime_checker(number)==-1)
  	      cout<<"it is not  prime number";
  	    else
  	      cout<<"it is a prime number ";
@@ -324,9 +290,6 @@ int armstrong_checker(int n)
 	    cout<<factorial(number);
 	    series_1(number);
 	    triangular (number); 
-	    cout<<series_0(number);
-	  
-	cout<<armstrong_checker(number);
-	  armstrong_printer(1,408);
+	  //  cout<<series_0(number);
 	     
  }
